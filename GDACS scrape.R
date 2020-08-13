@@ -122,7 +122,7 @@ gdaclist$status <- ifelse(gdaclist$hazard == "drought" & gdaclist$date == "2020"
 
 #Country names
 gdaclist$namesiso <- countrycode(gdaclist$names, origin = 'country.name', destination = 'iso3c')
-gdaclist$names <- countrycode(gdaclist$names, origin = 'country.name', destination = 'iso3c', nomatch = NULL)
+gdaclist$namesfull <- countrycode(gdaclist$names, origin = 'country.name', destination = 'iso3c', nomatch = NULL)
 
 #Write csv file
 write.csv(gdaclist, "gdaclist.csv")

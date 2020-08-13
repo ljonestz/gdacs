@@ -1,3 +1,7 @@
+#Load libraries
+install.packages("librarian")
+librarian::shelf(lubridate, rvest,dplyr, viridis, tidyverse, countrycode)
+
 #-----------------SCRAPE GDACS SITE------------------
 gdacweb <- "https://www.gdacs.org/"
 gdac <- read_html(gdacweb)
